@@ -35,6 +35,13 @@ a{
 
 }
 
+.is--nav{
+    position: sticky;
+    top : 0;
+    z-index: 1000;
+    background-color: var(--primary-bg-color);
+}
+
 #site-header{
     width: 100%;
     z-index: 10;
@@ -82,3 +89,32 @@ a{
     }
 }
 
+/* Styling for the main section */
+#site-main{
+    & #discover{
+        display: flex;
+        justify-content: center;
+
+        & .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 8.79rem;
+            text-align: center;
+
+            & .slide > h1{
+                display: block;
+                font-size: 13.8vw;
+                font-weight: 700;
+                color: var(--primary-text-color);
+                letter-spacing: -4px;
+                line-height: 0.8;
+
+                &.lightweight{
+                    font-weight: 300;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}
